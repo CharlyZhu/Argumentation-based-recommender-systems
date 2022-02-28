@@ -1,0 +1,49 @@
+@import "global";
+
+header {
+    padding-top: 1vh;
+    height: 8vh;
+    min-height: 6rem;
+    color: $PRIMARY_WHITE;
+    background-color: $PRIMARY_GRAY;
+    border-bottom: $SECONDARY_GREEN 3px solid;
+    display: flex;
+    align-items: center;
+
+    & .link {
+        color: $PRIMARY_WHITE;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            color: $SECONDARY_WHITE;
+        }
+
+        &.current {
+            color: $PRIMARY_GREEN;
+
+            &:hover {
+                color: $SECONDARY_GREEN;
+            }
+        }
+    }
+
+    & li {
+        display: inline;
+        padding-inline: 1rem;
+    }
+
+    & #branding {
+        font-size: $LARGE-24-FONT-SIZE;
+        cursor: pointer;
+
+        & .highlight {
+            color: $PRIMARY_GREEN;
+        }
+
+        & h1 {
+            margin: 0;
+        }
+    }
+}
